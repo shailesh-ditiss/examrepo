@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def root():
-    return "Welcome to ITIL Exam"
+    return "Welcome to ITIL Exam End Modules"
     
 @app.route("/modules", methods=["GET"])
 def sh_modules():
