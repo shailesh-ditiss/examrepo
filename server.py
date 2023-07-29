@@ -1,15 +1,18 @@
 from flask import Flask
 
-# create flask app
 app = Flask(__name__)
 
 
-# add all the routes
-
 @app.route("/", methods=["GET"])
 def root():
-    return "welcome to ITIL exam"
-
-
-# run the application
+    return "Welcome to ITIL Exam"
+    
+@app.route("/modules", methods=["GET"])
+def sh_modules():
+    return "1.FCN, 2.Security Concepts, 3.COSA, 4.NDC, 5.PKI 6,ITIL & Devops, 7.Compliance Audit"
+    
+@app.route("/me", methods=["GET"])
+def sh_details():
+    return "PRN:230344223049, Name: Shailesh Sonkamble, Ph_no: 9545782708"
+    
 app.run(host="0.0.0.0", port=4000, debug=True)
