@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def root():
-    return "Welcome to ITIL Exam "
+    return "Welcome to ITIL Exam END Module "
     
 @app.route("/modules", methods=["GET"])
 def sh_modules():
@@ -13,6 +13,6 @@ def sh_modules():
     
 @app.route("/me", methods=["GET"])
 def sh_details():
-    return "PRN:230344223049, Name: Shailesh Sonkamble, Ph_no: 9545782708"
+    return "PRN:230344223049, Name: Nilesh Sonkamble, Ph_no: 9545782708"
     
 app.run(host="0.0.0.0", port=4000, debug=True)
